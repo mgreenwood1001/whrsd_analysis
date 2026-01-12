@@ -2,6 +2,11 @@
 
 This document provides an overview of the three Python scripts used for analyzing WHRSD record documents and identifying potential issues in Town/District communications.
 
+## Data
+
+A link to the output analysis is here:
+https://docs.google.com/spreadsheets/d/14OkLoNyUvtcC-osBgt7EOTo-Rph4-NpYYER-d-Tjxhw/edit?usp=sharing
+
 ## Setup
 
 ### Prerequisites
