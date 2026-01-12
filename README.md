@@ -1,4 +1,4 @@
-# Whitmnan Hanson Regional School District Transparency
+# Whitman Hanson Regional School District Transparency
 
 # Legal Disclaimer
 
