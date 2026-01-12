@@ -6,8 +6,6 @@ https://whrsd-transparency.org/
 
 This project provides a comprehensive financial analysis and compliance auditing system for processing and analyzing Town/District communications, specifically designed to examine documents from WHRSD (Whitman Hanson Regional School District) transparency records obtained via the link above. The system uses advanced AI-powered text analysis to automatically identify financial discrepancies, compliance issues, and missing documentation in email communications and PDF documents.  LLM models that execute against this content are done in a local machine sandboxed environment, not cloud based.
 
-
-
 ### What This Project Does
 
 The system processes PDF documents (primarily email communications) through a multi-stage analysis pipeline that:
@@ -46,7 +44,7 @@ The automated nature of the system allows for processing large volumes of docume
 
 **IMPORTANT**: This project and its analysis tools are provided for informational and analytical purposes only. The system is designed purely for the purpose of analyzing the data at hand. No claims to accuracy, completeness, or reliability of the analysis results are guaranteed. The AI-powered analysis may contain errors, misinterpretations, or false positives. Users should independently verify any findings and should not rely solely on the automated analysis for making decisions or drawing conclusions. The authors and contributors of this project make no warranties, express or implied, regarding the accuracy, reliability, or suitability of the analysis for any particular purpose. Use of this system and its outputs is at your own risk.
 
-## Data
+# Output Data
 
 A link to the output analysis is here:
 https://docs.google.com/spreadsheets/d/14OkLoNyUvtcC-osBgt7EOTo-Rph4-NpYYER-d-Tjxhw/edit?usp=sharing
