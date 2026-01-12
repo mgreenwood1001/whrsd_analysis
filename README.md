@@ -1,6 +1,17 @@
-# Inputs
+# Whitmnan Hanson Regional School District Transparency
+
+# Legal Disclaimer
+
+**IMPORTANT**: This project and its analysis tools are provided for informational and analytical purposes only. The system is designed purely for the purpose of analyzing the data at hand. No claims to accuracy, completeness, or reliability of the analysis results are guaranteed. The AI-powered analysis may contain errors, misinterpretations, or false positives. Users should independently verify any findings and should not rely solely on the automated analysis for making decisions or drawing conclusions. The authors and contributors of this project make no warranties, express or implied, regarding the accuracy, reliability, or suitability of the analysis for any particular purpose. Use of this system and its outputs is at your own risk.
+
+## Inputs: Whitman Transparency Google Admin Extract from the District
 
 https://whrsd-transparency.org/
+
+## Output Data
+
+A link to the output analysis is here:
+https://docs.google.com/spreadsheets/d/14OkLoNyUvtcC-osBgt7EOTo-Rph4-NpYYER-d-Tjxhw/edit?usp=sharing
 
 ## Overview
 
@@ -39,15 +50,6 @@ This system is particularly valuable for:
 - **Citizen Oversight**: Enabling public scrutiny of government financial practices
 
 The automated nature of the system allows for processing large volumes of documents efficiently, while the AI-powered analysis helps surface issues that might be missed in manual review. 
-
-### Legal Disclaimer
-
-**IMPORTANT**: This project and its analysis tools are provided for informational and analytical purposes only. The system is designed purely for the purpose of analyzing the data at hand. No claims to accuracy, completeness, or reliability of the analysis results are guaranteed. The AI-powered analysis may contain errors, misinterpretations, or false positives. Users should independently verify any findings and should not rely solely on the automated analysis for making decisions or drawing conclusions. The authors and contributors of this project make no warranties, express or implied, regarding the accuracy, reliability, or suitability of the analysis for any particular purpose. Use of this system and its outputs is at your own risk.
-
-# Output Data
-
-A link to the output analysis is here:
-https://docs.google.com/spreadsheets/d/14OkLoNyUvtcC-osBgt7EOTo-Rph4-NpYYER-d-Tjxhw/edit?usp=sharing
 
 ## Setup
 
