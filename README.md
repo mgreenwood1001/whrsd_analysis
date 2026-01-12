@@ -2,9 +2,49 @@
 
 https://whrsd-transparency.org/
 
-# Analysis Scripts Summary
+## Overview
 
-This document provides an overview of the three Python scripts used for analyzing WHRSD record documents and identifying potential issues in Town/District communications.
+This project provides a comprehensive financial analysis and compliance auditing system for processing and analyzing Town/District communications, specifically designed to examine documents from WHRSD (Whitman Hanson Regional School District) transparency records obtained via the link above. The system uses advanced AI-powered text analysis to automatically identify financial discrepancies, compliance issues, and missing documentation in email communications and PDF documents.  LLM models that execute against this content are done in a local machine sandboxed environment, not cloud based.
+
+
+
+### What This Project Does
+
+The system processes PDF documents (primarily email communications) through a multi-stage analysis pipeline that:
+
+1. **Extracts and Analyzes Financial Information**: The first stage processes PDF files to extract text content and uses Large Language Models (LLMs) to identify accounting gaps and financial discrepancies. This includes detecting situations where monetary amounts changed beyond what was originally expected, budgeted, or communicated, helping to uncover potential cost overruns, budget variances, or unexpected financial adjustments.
+
+2. **Identifies Compliance and Ethical Concerns**: The second stage performs a comprehensive compliance audit on all processed documents, analyzing content from a regulatory and ethical perspective. It flags questionable actions, procedural violations, conflicts of interest, unusual patterns, and other red flags that may indicate non-compliance with laws, regulations, or ethical standards.
+
+3. **Tracks Missing Documentation**: The third stage focuses specifically on records with identified financial discrepancies, extracting information about missing attachments that were referenced in communications but not included. This helps identify gaps in documentation that may be critical for understanding financial transactions or compliance matters.
+
+### Key Features
+
+- **Automated Document Processing**: Recursively scans directories of PDF files and processes them in batch
+- **AI-Powered Analysis**: Uses locally-run LLM models (via Ollama) to perform intelligent text analysis without sending data to external services
+- **Structured Data Storage**: All analysis results are stored in a SQLite database with proper relational structure, indexes, and foreign key constraints
+- **Comprehensive Tracking**: Tracks financial amounts, participants, dates, compliance issues, and missing documentation
+- **Idempotent Operations**: Scripts can be safely re-run without duplicating data
+- **Privacy-Focused**: All processing happens locally using open-source models, ensuring sensitive government communications remain private
+
+### Technology Stack
+
+The project leverages **Ollama LLM** via **LangChain** for intelligent text analysis, storing results in a **SQLite database** (`financial_analysis.db`). The system is designed to work with locally-hosted models (such as `gpt-oss:20b` or `llama3.2`), ensuring that sensitive government communications are processed entirely on-premises without being sent to external cloud services. This approach provides both privacy and control over the analysis process.
+
+### Use Cases
+
+This system is particularly valuable for:
+- **Financial Auditors**: Identifying budget variances and unexpected cost increases
+- **Compliance Officers**: Detecting potential regulatory violations and ethical concerns
+- **Transparency Advocates**: Analyzing public records for accountability
+- **Investigative Journalists**: Uncovering patterns and discrepancies in government communications
+- **Citizen Oversight**: Enabling public scrutiny of government financial practices
+
+The automated nature of the system allows for processing large volumes of documents efficiently, while the AI-powered analysis helps surface issues that might be missed in manual review. 
+
+### Legal Disclaimer
+
+**IMPORTANT**: This project and its analysis tools are provided for informational and analytical purposes only. The system is designed purely for the purpose of analyzing the data at hand. No claims to accuracy, completeness, or reliability of the analysis results are guaranteed. The AI-powered analysis may contain errors, misinterpretations, or false positives. Users should independently verify any findings and should not rely solely on the automated analysis for making decisions or drawing conclusions. The authors and contributors of this project make no warranties, express or implied, regarding the accuracy, reliability, or suitability of the analysis for any particular purpose. Use of this system and its outputs is at your own risk.
 
 ## Data
 
@@ -89,9 +129,6 @@ pip list
 
 You should see `pypdf`, `langchain`, `langchain-ollama`, and `langchain-core` in the list.
 
-## Overview
-
-These scripts work together to process PDF documents (typically emails), extract financial information, identify discrepancies, flag compliance concerns, and track missing attachments. All scripts use **Ollama LLM** via **LangChain** for intelligent text analysis and store results in a **SQLite database** (`financial_analysis.db`) primarily using a local (running on a computer not run by a company) gpt-oss:20b model.  These same procedures can be obtained by downloading the model to your local computer and 
 
 ## Scripts
 
